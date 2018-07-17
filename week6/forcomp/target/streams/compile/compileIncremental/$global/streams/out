@@ -1,0 +1,49 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/lukasz/Projects/Coursera/Scala1/week6/forcomp/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 4562aad3, interfacing (CompilerInterface) with Scala compiler version 2.11.12[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/resources.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/rt.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/sunrsasign.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/jsse.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/jce.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/charsets.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/lib/jfr.jar:/home/lukasz/Software/java/jdk1.8.0_101/jre/classes:/home/lukasz/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/target/scala-2.11/classes:/home/lukasz/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar:/home/lukasz/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/home/lukasz/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar:/home/lukasz/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar[0m
+[0m[[31merror[0m] [0m/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala:169: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : forcomp.Anagrams.Sentence[0m
+[0m[[31merror[0m] [0m    (which expands to)  List[String][0m
+[0m[[31merror[0m] [0m required: forcomp.Anagrams.Occurrences[0m
+[0m[[31merror[0m] [0m    (which expands to)  List[(Char, Int)][0m
+[0m[[31merror[0m] [0m    for(occ <-l; k <- sentence(subtract(sentence, occ)))[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0m/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala:175: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : List[forcomp.Anagrams.Word][0m
+[0m[[31merror[0m] [0m    (which expands to)  List[String][0m
+[0m[[31merror[0m] [0m required: forcomp.Anagrams.Occurrences[0m
+[0m[[31merror[0m] [0m    (which expands to)  List[(Char, Int)][0m
+[0m[[31merror[0m] [0m        if (!w.isEmpty) w::sentenceAnagrams(subtract(a,w))[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/lukasz/Projects/Coursera/Scala1/week6/forcomp/src/main/scala/forcomp/Anagrams.scala:169: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Unit[0m
+[0m[[31merror[0m] [0m required: List[forcomp.Anagrams.Sentence][0m
+[0m[[31merror[0m] [0m    (which expands to)  List[List[String]][0m
+[0m[[31merror[0m] [0m    for(occ <-l; k <- sentence(subtract(sentence, occ)))[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0mthree errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
